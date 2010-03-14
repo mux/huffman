@@ -56,7 +56,7 @@ huffmanSorted = build S.empty . prepare
 -- Derive the binary code from a huffman tree.
 code :: HuffmanTree a -> [(a,[Bit])]
 code = code' []
-  where code' bits Empty      = []
+  where code' _    Empty      = []
         code' bits (Leaf x)   = [(x,bits)]
         code' bits (Node l r) = map (second (Zero:)) (code' bits l) ++
                                 map (second (One:)) (code' bits r)
