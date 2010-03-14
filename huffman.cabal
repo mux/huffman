@@ -7,8 +7,14 @@ Copyright:	2010, Maxime Henrion
 Maintainer:	Maxime Henrion <mhenrion@gmail.com>
 Bug-Reports:	http://bitbucket.org/mumux/huffman/issues/
 Category:	Data, Compression
-Synopsis:	Simple implementation of the Huffman algorithm
+Synopsis:	Pure Haskell implementation of the Huffman encoding algorithm
 Description:
+	A simple and pure Haskell implementation of the Huffman encoding
+	algorithm.
+	.
+	The "huffman" function provides the original O(n log n) algorithm
+	implemented with a priority queue.  If the input symbols are sorted
+	by probability, the O(n) "huffmanSorted" function can be used instead.
 Build-Type:	Simple
 Cabal-Version:	>= 1.6
 Tested-with:	GHC ==6.12
