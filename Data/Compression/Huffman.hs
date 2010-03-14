@@ -1,4 +1,4 @@
-module Huffman where
+module Data.Compression.Huffman where
 
 import Data.List (intercalate)
 import Control.Arrow (first,second)
