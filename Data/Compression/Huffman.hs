@@ -12,7 +12,7 @@ module Data.Compression.Huffman
 import Data.List (intercalate)
 import Control.Arrow (first,second)
 import qualified Data.PriorityQueue.FingerTree as PQ
-import Data.Sequence as S
+import Data.Sequence as S hiding (Empty)
 
 data Bit = Zero | One
 
